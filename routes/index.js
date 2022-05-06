@@ -4,7 +4,7 @@ require('dotenv').config()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: process.env.title });
+  res.render('index', { title: "GCP" });
 });
 
 module.exports = router;
