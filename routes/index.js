@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
+require('dotenv').config()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'World' });
+  res.render('index', { title: process.env.title });
 });
 
 module.exports = router;
